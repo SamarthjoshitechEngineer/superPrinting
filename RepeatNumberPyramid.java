@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class RepeatNumberPyramid{
+    public static void main(String[]args){
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter number of rows and columns");
+int n=sc.nextInt();
+int i=0;
+int nsp=n-i;
+for(i=1;i<=n;i++){
+    for(int j=1;j<=nsp;j++){
+        System.out.print("  ");
+    }
+    nsp--;
+for(int k=1;k<=i;k++ ){
+    System.out.print(k +" ");
+}
+int b=i-1;
+for(int q=1;q<=i-1;q++){
+    System.out.print(b +" ");
+    b--;
+}
+System.out.println();
+}
+    }
+}
